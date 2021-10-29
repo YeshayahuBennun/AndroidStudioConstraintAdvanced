@@ -30,4 +30,52 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.96" />
+
+    <ImageView
+        android:id="@+id/cover_image_view"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:contentDescription="@string/poster_image_description"
+        app:layout_constraintStart_toStartOf="@+id/guideline_one"
+        app:srcCompat="@drawable/avengers_poster"
+        tools:layout_editor_absoluteY="134dp" />
+
+    <TextView
+        android:id="@+id/title_text_view"
+        android:layout_width="210dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="@string/avengers_text"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toStartOf="@+id/bookmark_image_view"
+        app:layout_constraintStart_toEndOf="@+id/cover_image_view"
+        app:layout_constraintTop_toBottomOf="@+id/header_image_view" />
+
+    <ImageButton
+        android:id="@+id/bookmark_image_view"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@null"
+        android:contentDescription="@string/bookmark_description"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_two"
+        app:layout_constraintTop_toBottomOf="@+id/header_image_view"
+        app:srcCompat="@drawable/ic_bookmark" />
+
+    <TextView
+        android:id="@+id/details_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/movie_details_string"
+        app:layout_constraintStart_toEndOf="@+id/cover_image_view"
+        app:layout_constraintTop_toBottomOf="@+id/title_text_view" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
